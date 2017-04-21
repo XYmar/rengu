@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: XY
-  Date: 2017/4/20
-  Time: 8:53
+  Date: 2017/4/21
+  Time: 10:06
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -14,7 +14,7 @@
     <script src="javascript/jquery-3.1.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="mycss/shouye4.css">
+    <link rel="stylesheet" href="mycss/shouye5.css">
     <style type="text/css">
 
         a:link{
@@ -34,16 +34,17 @@
             margin-left: 24px;
         }
 
-       ul,li,a {
-           margin: 0;
-           padding: 0;
-           font-size: 12px;
-           list-style: none;
-           text-decoration: none;
-       }
-       .row-fluid.pro{
-           height: 210px;
-       }
+        ul,li,a {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            list-style: none;
+            text-decoration: none;
+        }
+        .row-fluid.pro{
+            height: 210px;
+            border-radius: 3%;
+        }
         .row-fluid.pro:hover{
             background:rgba(0,0,0,0.09) none repeat scroll !important;
         }
@@ -55,6 +56,7 @@
         }
         .btn{
             background: #5E8DB2;
+            color: white;
         }
         .friend_img{
             width: 90px;
@@ -73,18 +75,18 @@
 <div class="container-fluid" style="width: 70%; margin-left: 15%;">
     <%--头部--%>
     <div class="row-fluid" style="height: 80px;margin-top: 2%;">
-        <div class="span2" style="width: 60px;height: 60px;">
+        <div class="span2" style="height: 60px;">
             <img alt="140x140" src="images/LOGO.png" style="width: 60px;height: 60px;" />
         </div>
         <div class="span6" style="margin-top: 2%;">
-            <div class="biaoti text-left">
+            <div class="biaoti text-left" style="margin-left: -17%;">
                 <h4>
                     南京仁谷系统集成有限公司
                 </h4>
             </div>
         </div>
-        <div class="span4" style="margin-top: 4%;width: 39%">
-            <ul class="unstyled inline" style="font-size: 18px;margin-left: 54%;width: 151px;">
+        <div class="span4" style="margin-top: 3%;">
+            <ul class="unstyled inline" style="font-size: 18px;margin-left: 44%;width: 151px;">
                 <li><a href="./introduce/production.jsp">商品</a></li>
                 <li><a href="./introduce/service.jsp">服务</a></li>
                 <li><a href="./introduce/resource.jsp">来源</a></li>
@@ -222,16 +224,17 @@
     <hr/>
     <%--产品体系详介--%>
     <div class="row-fluid pro">
-        <div class="span6 image" style="width: 315px;height: 200px;">
+        <div class="span6 image" style="width: 320px;height: 200px;">
             <img alt="140x140" src="product_img/qianru.png"  class="img-rounded"/>
         </div>
-        <div class="span6" style="width: 407px;">
+        <div class="span6" style="width: 54%;">
             <h4>
                 嵌入式应用开发
             </h4>
             <p>
                 我公司长期致力于嵌入式操作系统下的图形化研究和应用开发，并成功的将Qt图形库集成到嵌入式开发及运行环境中，并基于此研制了我国多个型号的装备产品。研制过程严格遵循GJB5000A标准，形成了成熟的技术体系和管理体系。
             </p>
+            <br/>
             <p>
                 <a class="btn" href="#">查看更多 »</a>
             </p>
@@ -239,16 +242,17 @@
     </div>
     <br/>
     <div class="row-fluid pro">
-        <div class="span6 image" style="width: 315px;height: 200px;">
+        <div class="span6 image" style="width: 320px;height: 200px;">
             <img alt="140x140" src="product_img/fenbu.png"  class="img-rounded"   style="width: 300px;height: 200px;"/>
         </div>
-        <div class="span6" style="width: 407px;">
+        <div class="span6" style="width: 54%;">
             <h4>
                 分布式仿真
             </h4>
             <p>
                 分布式仿真类产品是以系统仿真、数字化网络、分布式、中间件等技术为核心，结合当前面向服务、开放式体系架构的思想，面向不同的领域和业务应用，建立以模型和数据为中心的分布式仿真系统，满足论证、推演、模拟、测试、评估等的需要。
             </p>
+            <br/>
             <p>
                 <a class="btn" href="#">查看更多 »</a>
             </p>
@@ -256,16 +260,17 @@
     </div>
     <br/>
     <div class="row-fluid pro">
-        <div class="span6 image" style="width: 315px;height: 200px;">
+        <div class="span6 image" style="width: 320px;height: 200px;">
             <img alt="140x140" src="product_img/xitong.png"  class="img-rounded"   style="width: 300px;height: 200px;"/>
         </div>
-        <div class="span6" style="width: 407px;">
+        <div class="span6" style="width: 54%;">
             <h4>
                 系统分析建模
             </h4>
             <p>
                 系统分析建模类产品是我公司的一个核心产品，是整个产品体系的中心。系统分析建模主要面向不同领域的复杂系统总体设计单位，提供需求辅助分析、需求管理、系统架构设计、系统UI设计、部署设计、组件设计服务。从而提供系统的设计质量和效率，保证设计成果的复用和积累。
             </p>
+            <br/>
             <p>
                 <a class="btn" href="#">查看更多 »</a>
             </p>
@@ -273,16 +278,17 @@
     </div>
     <br/>
     <div class="row-fluid pro">
-        <div class="span6 image" style="width: 315px;height: 200px;">
+        <div class="span6 image" style="width: 320px;height: 200px;">
             <img alt="140x140" src="product_img/jicheng.png" class="img-rounded"   style="width: 300px;height: 200px;"/>
         </div>
-        <div class="span6" style="width: 407px;">
+        <div class="span6" style="width: 54%;">
             <h4>
                 集成联调保障
             </h4>
             <p>
                 由于复杂系统的研制过程中需要大量的试验、集成和保障工作，为此我公司设有专门的部门和人员，配合各个研究院所完成各项试验。目前已分别在北京、大连、青岛、昆明、宁波等多个地点参与试验。
             </p>
+            <br/>
             <p>
                 <a class="btn" href="#">查看更多 »</a>
             </p>

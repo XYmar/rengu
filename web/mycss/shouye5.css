@@ -1,0 +1,84 @@
+.second{
+    width:100%;
+    height:41px;
+    background-color:#3A3A3A;
+    margin-top: 100px;
+}
+.shouyetype{
+    font-size: 14px;
+    float: left;
+    padding: 11px 28px;
+}
+.second>ul>li>a{
+    font-size:14px;
+    color:white;
+    float:left;
+}
+.shouyetype:hover{
+    background-color:#313131;
+}
+
+/*************************************************************************/
+.choose{
+    position: relative;
+    z-index: 1;
+    margin-left: -20px;
+}
+.scenery{
+    font-size:14px;
+    color:white;
+    float:left;
+    padding:15px 0px;
+    margin-left:-10px;
+    width:17%;
+    height:11px;
+}
+.scenery:hover{
+    background-color: #333333;
+}
+.scenery>ul>li{
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+.scenery>ul>li>a{
+    color: white;
+    font-size:14px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+.scenery>ul>li>a:hover{
+    color: rgb(255,235,96);
+    font-weight: 600;
+}
+.scenery>ul{
+    width: 190px;
+    height: 170px;
+    background-color: #333333;
+    margin-top: 26px;
+    display: none;
+}
+.scenery:hover>ul{
+    display: block;
+}
+.scenery>ul>li:hover{
+    background: #38373b;
+}
+.qbsp{
+    padding: 0px 15px;
+    line-height:10px;
+}
+
+
+#foote{height: 199px;width:100%;clear:both;}
+#foote .nls{height:195px;background: #38373b;}
+#foote .nls .nlsl{width:1200px;margin:0px auto;padding:20px 0;}
+#foote .nls .nlsl ul{padding:5px 0;}
+#foote .nls .nlsl ul li{height:20px; width: 150px; margin-left: 25px;}
+#foote .nls .nlsl .nli{float:left;margin-left:13%; margin-right:-10px;}
+#foote .nls .nlsl ul li a{text-decoration:none;cursor:pointer;font-size:12px;color:cornsilk;font-family:Microsoft YaHei;font-weight:normal;}
+#foote .nls .nlsl span{font-size:14px;color:aliceblue;font-family:Microsoft YaHei;;font-weight:normal;height:25px;line-height:25px;border-bottom:1px solid #666;display:block;}
+#foote .ntec{height:32px;background:#333;color:#FFF;}
+#foote .ntec .nth p{margin:0;font-size:12px;color:#FFF;line-height:32px;font-family:Microsoft YaHei;font-weight:lighter;-webkit-text-stroke: 0.1px;}
+#foote .ntec .nth {width:960px;margin:0 auto;}
+
+#foote .nls .nlsl .ca ul {float:left;width:95px;margin-right:30px;}
