@@ -8,9 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="../css/shouye.css">
+    <link rel="stylesheet" href="../mycss/shouye.css">
     <title>南京仁谷系统集成有限公司</title>
     <style type="text/css">
+        body{
+            width: 70%;
+            margin-left: 15%;
+        }
         ul li{
             list-style-type: none;
         }
@@ -30,26 +34,25 @@
             width: 380px;
             height: 100px;
             float: left;
-            margin-top: 17px;
-            margin-left: 45px;
+            margin-top: 100px;
+            margin-left: 0px;
         }
         .biaoti{
-            width: 600px;
+            width: 300px;
             height: 100px;
-            margin-top: 21px;
+            margin-top: 140px;
             float: left;
+            margin-left:-260px;
         }
-        .introduce{
-            border-radius: 50%;
+
+        #introduce{
+            border-radius: 10%;
             text-indent: 2em;
+            height: 100px;
         }
     </style>
 </head>
 <body>
-
-<div id="Layer1" style="position: fixed; width:100%; height:100%; z-index:-1">
-    <img src="../images/bg.jpg" height="100%" width="100%"/>
-</div>
 
     <div id="head">
         <div class="ht">
@@ -57,22 +60,23 @@
                 <img src="../images/LOGO.png" alt="仁谷图标" width="100" height="100"/>
             </div>
             <div class="biaoti">
-                <h1 style="font: 新宋体">南京仁谷系统集成有限公司</h1>
+                <h4>南京仁谷系统集成有限公司</h4>
             </div>
             <div class="hr">
-                    <ul>
-                        <li><a href="./introduce/production.jsp">商品&nbsp;|&nbsp;</a></li>
-                        <li><a href="./introduce/service.jsp">服务&nbsp;|&nbsp;</a></li>
-                        <li><a href="./introduce/resource.jsp">来源&nbsp;|&nbsp;</a></li>
-                        <li><a href="./introduce/customer.jsp">客户&nbsp;|&nbsp;</a></li>
-                        <li style="border:0;"><a href="./introduce/company.jsp">公司</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="./introduce/production.jsp">商品&nbsp;|&nbsp;</a></li>
+                    <li><a href="./introduce/service.jsp">服务&nbsp;|&nbsp;</a></li>
+                    <li><a href="./introduce/resource.jsp">来源&nbsp;|&nbsp;</a></li>
+                    <li><a href="./introduce/customer.jsp">客户&nbsp;|&nbsp;</a></li>
+                    <li style="border:0;"><a href="./introduce/company.jsp">公司</a></li>
+                </ul>
             </div>
-
         </div>
     </div>
-
-    <div id="left" onclick="fun('-')"><img src="../images/left.png" width="60px" height="60px"></div>
+    <br/>
+    <hr/>
+    <br/>
+    <div id="left" onclick="fun('-')"><img src="../images/left.png" width="30px" height="30px"></div>
     <div align="center">
         <img src="../images/pugongying.jpg" name="imglist" style="display:block" width="100%" height="420"/>
     </div>
@@ -88,7 +92,7 @@
     <div align="center">
         <img src="../images/build.jpg" name="imglist" style="display:none" width="100%" height="420"/>
     </div>
-    <div id="right" onclick="fun('+')"><img src="../images/right.png" width="60px" height="60px"></div>
+    <div id="right" onclick="fun('+')"><img src="../images/right.png" width="30px" height="30px"></div>
     <div id="did1" name="list2" onmouseover="func(0)" onmouseout="demo(0)"></div>
     <div id="did1" name="list2" onmouseover="func(1)" onmouseout="demo(1)"></div>
     <div id="did1" name="list2" onmouseover="func(2)" onmouseout="demo(2)"></div>
@@ -134,10 +138,10 @@
             for(var i=0;i<list.length;i++){
                 if(i==m){
                     list[i].style.display="block";
-                    list1[i].style.backgroundColor="blue";
+                    list1[i].style.backgroundColor="white";
                 }else{
                     list[i].style.display="none";
-                    list1[i].style.backgroundColor="orange";
+                    list1[i].style.backgroundColor="silver";
                 }
             }
         }
@@ -159,10 +163,10 @@
             for(var i=0;i<list1.length;i++){
                 if(i==h){
                     list[i].style.display="block";
-                    list1[i].style.backgroundColor="blue";
+                    list1[i].style.backgroundColor="white";
                 }else{
                     list[i].style.display="none";
-                    list1[i].style.backgroundColor="orange";
+                    list1[i].style.backgroundColor="silver";
                 }
             }
         }
@@ -177,14 +181,16 @@
     <br/>
 
     <div id="introduce">
-        <p style="font-size: 20px">
+        <p style="font-size: 15px">
             南京仁谷系统集成有限公司是一家以自主知识产权的军用装备系统分析、建模、设计和开发平台为主业的高科技企业，
             同时提供业界领先的装备软件测试、验证解决方案和应用，简称“仁谷科技”。
             仁谷科技以南京航空航天大学科研创新力量为后盾，联合军队及其下属科研院所，依托南京丰富的软件人力资源，
             以装备系统软件分析、设计和验证技术为核心，专注于具有自主知识产权的军用装备软件、武器装备设计和测试平台、
-            武器装备模拟训练设备、装器装备保障条件等研发；同时和相关单位合作承担军队和航空航天部门的预先研究项目。
+            武器装备模拟训练设备、装器装备保障条件等研发。
         </p>
     </div>
+    <br/>
+    <hr/>
     <br/>
 
     <div>
@@ -202,7 +208,7 @@
         </div>
     </div>
     <div>
-        <div id="sc2div">
+        <div id="sc1div">
             <img src="../product_img/fenbu.png" class="scimg" width="340px" height="280" margin-left="2px;"/>
         </div>
         <div id="rgIntro">
@@ -232,7 +238,7 @@
         </div>
     </div>
     <div>
-        <div id="sc2div">
+        <div id="sc1div">
             <img src="../product_img/jicheng.png" class="scimg" width="340px" height="280" margin-left="2px;"/>
         </div>
         <div id="rgIntro">
@@ -247,20 +253,12 @@
             <input type="button" value="查看详情" class="scbtn"/>
         </div>
     </div>
+    <br/>
 
     <div id="foote">
         <div class="nls">
             <div class="nlsl">
-                <div class="nli ca">
-                    <span>技术产品</span>
-                    <ul style="padding-right:50px;">
-                        <li><a href="">X型鱼雷通道检查模块</a></li>
-                        <li><a href="">水下声纹识别平台</a></li>
-                        <li><a href="">兵力协同对抗仿真平台</a></li>
-                        <li><a href="">XX型舰辅助决策系统</a></li>
-                        <li><a href="">多功能数字化网络联调装置</a></li>
-                    </ul>
-                </div>
+
                 <div class="nli ca">
                     <span>产品体系</span>
                     <ul style="padding-right:20px;">
@@ -271,17 +269,7 @@
                     </ul>
                 </div>
 
-                <div class="nli ca">
-                    <span>成功案例</span>
-                    <ul style="padding-right:60px;">
-                        <li><a href="">X型鱼雷通道检查模块</a></li>
-                        <li><a href="">水下声纹识别平台</a></li>
-                        <li><a href="">兵力协同对抗仿真平台</a></li>
-                        <li><a href="">XX型舰辅助决策系统</a></li>
-                        <li><a href="">多功能数字化网络联调装置</a></li>
-                    </ul>
 
-                </div>
                 <div class="nli ca">
                     <span>关于公司</span>
                     <ul style="padding-right:30px;">

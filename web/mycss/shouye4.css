@@ -47,7 +47,8 @@
     margin-top: 10px;
 }
 .scenery>ul>li>a:hover{
-    color:blue;
+    color: rgb(255,235,96);
+    font-weight: 600;
 }
 .scenery>ul{
     width:250px;
