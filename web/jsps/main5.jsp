@@ -68,6 +68,7 @@
             margin-left: 8px;
             font-size: 12px;
         }
+
     </style>
 </head>
 <body>
@@ -236,7 +237,7 @@
             </p>
             <br/>
             <p>
-                <a class="btn" href="#">查看更多 »</a>
+                <a class="btn" href="jsps/system/qianru.jsp">查看更多 »</a>
             </p>
         </div>
     </div>
