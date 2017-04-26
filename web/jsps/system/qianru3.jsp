@@ -11,12 +11,12 @@
 <head>
     <title>嵌入式应用开发</title>
 
-    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <script src="../../javascript/jquery-3.1.1.min.js"></script>
-    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <script src="javascript/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="../../mycss/shouye5.css">
+    <link rel="stylesheet" href="mycss/shouye5.css">
 
     <style type="text/css">
 
@@ -61,7 +61,16 @@
         .span3:hover{
             background:rgba(0,0,0,0.09) none repeat scroll !important;
         }
-
+        .icon {
+            margin:10px;
+            width: 215px;
+            height: 180px;
+            text-align: center;
+            float: left;
+        }
+        .icon:hover{
+            background:rgba(0,0,0,0.09) none repeat scroll !important;
+        }
     </style>
 </head>
 <body>
@@ -69,7 +78,7 @@
 <%--头部--%>
     <div class="row-fluid" style="height: 70px;margin-top: 2%;">
     <div class="span2" style="height: 60px;">
-        <img alt="140x140" src="../../images/LOGO.png" style="width: 60px;height: 60px;" />
+        <img alt="140x140" src="images/LOGO.png" style="width: 60px;height: 60px;" />
     </div>
     <div class="span6" style="margin-top: 2%;">
         <div class="biaoti text-left" style="margin-left: -17%;">
@@ -104,7 +113,7 @@
 
     <div class="row-fluid">
         <div class="span12">
-            <img alt="140x140" src="../../system_img/qianru.png" style="width: 100%;height: 300px"/>
+            <img alt="140x140" src="system_img/qianru.png" style="width: 100%;height: 300px"/>
         </div>
     </div>
     <div class="row-fluid">
@@ -120,61 +129,17 @@
 <%--产品--%>
 
     <h4>产品清单</h4>
-
-    <div class="row-fluid">
-        <div class="span12">
-            <div class="row-fluid">
-                <div class="span3">
-                    <a href="#" style="color: #333333;">
-                        <img alt="140x140" src="<c:url value='/${product.pimage }'/>" class="img-polaroid" />
-                        <p class="text-center">
-                            <strong>${product.pname }</strong>
-                        </p>
-                    </a>
-                </div>
-                <div class="span3">
-                    <a href="#" style="color: #333333;">
-                        <img alt="140x140" src="../../pro_img/changhang.png" class="img-polaroid" />
-                        <p class="text-center">
-                            <strong>X型长航诱饵规划台</strong>
-                        </p>
-                    </a>
-                </div>
-                <div class="span3">
-                    <a href="#" style="color: #333333;">
-                        <img alt="140x140" src="../../pro_img/tuxinghua.png" class="img-polaroid" />
-                        <p class="text-center">
-                            <strong>嵌入式图形化解决方案</strong>
-                        </p>
-                    </a>
-                </div>
-                <div class="span3">
-                    <a href="#" style="color: #333333;">
-                        <img alt="140x140" src="../../pro_img/shuisheng.png" class="img-polaroid" />
-                        <p class="text-center">
-                            <strong>水声对抗器材发控仪</strong>
-                        </p>
-                    </a>
-                </div>
-            </div>
+    <c:forEach items="${requestScope.productList }" var="product">
+        <div class="icon">
+            <a href="#" style="color: #333333;">
+                <img alt="140x140" src="<c:url value='/${product.pimage }'/>" class="img-polaroid" />
+                <p class="text-center">
+                    <strong>${product.pname }</strong>
+                </p>
+            </a>
         </div>
-    </div>
+    </c:forEach>
     <br/>
-    <div class="row-fluid">
-        <div class="span12">
-            <div class="row-fluid">
-                <div class="span3">
-                    <a href="#" style="color: #333333;">
-                            <img alt="140x140" src="../../pro_img/shapan2.png" class="img-polaroid" />
-                            <p class="text-center">
-                                <strong>作战指挥电子沙盘</strong>
-                            </p>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
 </div>
 <br/>
 <hr/>

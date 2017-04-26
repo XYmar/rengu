@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>南京仁谷系统集成有限公司</title>
@@ -224,77 +225,27 @@
     </div>
     <hr/>
     <%--产品体系详介--%>
-    <div class="row-fluid pro">
-        <div class="span6 image" style="width: 320px;height: 200px;">
-            <img alt="140x140" src="system_img/qianru.png"  class="img-rounded"/>
-        </div>
-        <div class="span6" style="width: 54%;">
-            <h4>
-                嵌入式应用开发
-            </h4>
-            <p>
-                我公司长期致力于嵌入式操作系统下的图形化研究和应用开发，并成功的将Qt图形库集成到嵌入式开发及运行环境中，并基于此研制了我国多个型号的装备产品。研制过程严格遵循GJB5000A标准，形成了成熟的技术体系和管理体系。
-            </p>
+        <c:forEach items="${requestScope.systemsList }" var="systems">
+            <div class="row-fluid pro">
+                <div class="span6 image" style="width: 320px;height: 200px;">
+                    <img alt="140x140" src="<c:url value="/${systems.simage}"/>"  class="img-rounded"/>
+                </div>
+                <div class="span6" style="width: 54%;">
+                    <h4>
+                        ${systems.sname}
+                    </h4>
+                    <p>
+                        ${systems.sdesc}
+                    </p>
+                    <br/>
+                    <p>
+                        <a class="btn" href="<c:url value='/ProductServlet?method=findBySystems&sid=${systems.sid }'/>">查看更多 »</a>
+                    </p>
+                </div>
+            </div>
             <br/>
-            <p>
-                <a class="btn" href="jsps/system/qianru.jsp">查看更多 »</a>
-            </p>
-        </div>
-    </div>
-    <br/>
-    <div class="row-fluid pro">
-        <div class="span6 image" style="width: 320px;height: 200px;">
-            <img alt="140x140" src="system_img/fenbu.png"  class="img-rounded"   style="width: 300px;height: 200px;"/>
-        </div>
-        <div class="span6" style="width: 54%;">
-            <h4>
-                分布式仿真
-            </h4>
-            <p>
-                分布式仿真类产品是以系统仿真、数字化网络、分布式、中间件等技术为核心，结合当前面向服务、开放式体系架构的思想，面向不同的领域和业务应用，建立以模型和数据为中心的分布式仿真系统，满足论证、推演、模拟、测试、评估等的需要。
-            </p>
-            <br/>
-            <p>
-                <a class="btn" href="#">查看更多 »</a>
-            </p>
-        </div>
-    </div>
-    <br/>
-    <div class="row-fluid pro">
-        <div class="span6 image" style="width: 320px;height: 200px;">
-            <img alt="140x140" src="system_img/xitong.png"  class="img-rounded"   style="width: 300px;height: 200px;"/>
-        </div>
-        <div class="span6" style="width: 54%;">
-            <h4>
-                系统分析建模
-            </h4>
-            <p>
-                系统分析建模类产品是我公司的一个核心产品，是整个产品体系的中心。系统分析建模主要面向不同领域的复杂系统总体设计单位，提供需求辅助分析、需求管理、系统架构设计、系统UI设计、部署设计、组件设计服务。从而提供系统的设计质量和效率，保证设计成果的复用和积累。
-            </p>
-            <br/>
-            <p>
-                <a class="btn" href="#">查看更多 »</a>
-            </p>
-        </div>
-    </div>
-    <br/>
-    <div class="row-fluid pro">
-        <div class="span6 image" style="width: 320px;height: 200px;">
-            <img alt="140x140" src="system_img/jicheng.png" class="img-rounded"   style="width: 300px;height: 200px;"/>
-        </div>
-        <div class="span6" style="width: 54%;">
-            <h4>
-                集成联调保障
-            </h4>
-            <p>
-                由于复杂系统的研制过程中需要大量的试验、集成和保障工作，为此我公司设有专门的部门和人员，配合各个研究院所完成各项试验。目前已分别在北京、大连、青岛、昆明、宁波等多个地点参与试验。
-            </p>
-            <br/>
-            <p>
-                <a class="btn" href="#">查看更多 »</a>
-            </p>
-        </div>
-    </div>
+        </c:forEach>
+
     <hr/>
     <%--合作伙伴--%>
     <div class="row-fluid">

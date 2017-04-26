@@ -124,38 +124,17 @@
     <div class="row-fluid">
         <div class="span12">
             <div class="row-fluid">
-                <div class="span3">
-                    <a href="#" style="color: #333333;">
-                        <img alt="140x140" src="<c:url value='/${product.pimage }'/>" class="img-polaroid" />
-                        <p class="text-center">
-                            <strong>${product.pname }</strong>
-                        </p>
-                    </a>
-                </div>
-                <div class="span3">
-                    <a href="#" style="color: #333333;">
-                        <img alt="140x140" src="../../pro_img/changhang.png" class="img-polaroid" />
-                        <p class="text-center">
-                            <strong>X型长航诱饵规划台</strong>
-                        </p>
-                    </a>
-                </div>
-                <div class="span3">
-                    <a href="#" style="color: #333333;">
-                        <img alt="140x140" src="../../pro_img/tuxinghua.png" class="img-polaroid" />
-                        <p class="text-center">
-                            <strong>嵌入式图形化解决方案</strong>
-                        </p>
-                    </a>
-                </div>
-                <div class="span3">
-                    <a href="#" style="color: #333333;">
-                        <img alt="140x140" src="../../pro_img/shuisheng.png" class="img-polaroid" />
-                        <p class="text-center">
-                            <strong>水声对抗器材发控仪</strong>
-                        </p>
-                    </a>
-                </div>
+                <c:forEach items="${requestScope.productList}" var="product">
+                    <div class="span3">
+                        <a href="#" style="color: #333333;">
+                            <img alt="140x140" src="<c:url value='/${product.pimage }'/>" class="img-polaroid" />
+                            <p class="text-center">
+                                <strong>${product.pname }</strong>
+                            </p>
+                        </a>
+                    </div>
+                </c:forEach>
+
             </div>
         </div>
     </div>
